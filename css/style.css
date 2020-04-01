@@ -2,7 +2,7 @@
 @import "./reset.css";
 
 /* #headBox */
-#headBox { width: 100%; height: 76px; position: fixed; top: 0; left: 0; background: #fff; box-shadow: 0px 0px 10px rgba(0,0,0,0.4); }
+#headBox { width: 100%; height: 76px; position: fixed; top: 0; left: 0; background: #fff; box-shadow: 0px 0px 10px rgba(0,0,0,0.4); z-index: 2000;}
 #headBox > .inner { width: 980px; height: 100%; margin: 0 auto; display: flex; align-items: center; }
 #headBox > .inner > h1 { margin-right: 20px; }
 #headBox > .inner > h1 .logo { width: auto; height: 36px; }
@@ -17,6 +17,27 @@
 #headBox > .inner > .download > li > a > i { font-size: 20px; }
 
 /* #visualBox */
+#visualBox { height: 720px; box-sizing: border-box; padding-top: 200px; background-color: #f1f3f5; }
+#visualBox > .inner { width: 980px; height: 100%; margin: 0 auto; position: relative; }
+#visualBox > .inner > h1 { text-align: center; font-size: 40px; margin-bottom: 10px; }
+#visualBox > .inner > h1+p { text-align: center; font-size: 18px; }
+#visualBox > .inner > .visual_img {position: absolute; width: 760px; height: 400px; background: url('../img/phone-ee2960c1cbf1e932ac291ad59eacc55ef6dc3cab3e9e4ea4284c4e0256bb9f4c.png') bottom no-repeat; bottom: 0px; left: 0px;}
+#visualBox > .inner > .rank_box { width: 210px; position: absolute; top: 100px; left: 770px; }
+#visualBox > .inner > .rank_box > h2 {padding-bottom: 20px; margin-bottom: 20px; border-bottom: 1px solid #333; text-align: center; font-size: 18px;  }
+#visualBox > .inner > .rank_box > ol { counter-reset: rank; }
+#visualBox > .inner > .rank_box > ol > li { display: flex; counter-increment : rank; margin-bottom: 16px; font-size: 16px; }
+#visualBox > .inner > .rank_box > ol > li::before { content: counter(rank); display: inline-block; font-weight: bold; margin-right: 10px; font-size: 18px; }
+#visualBox > .inner > .rank_box > ol > li > a {display: flex; width: 100%; justify-content: space-between; }
+#visualBox > .inner > .rank_box > ol.rank_list > li a span{font-size: 12px; }
+#visualBox > .inner > .rank_box > ol.rank_list > li:hover a,
+#visualBox > .inner > .rank_box > ol.rank_list > li:hover a span{ color: #ff843d; }
+#visualBox > .inner > .rank_box > ol > li > a .change { font-size: 12px;}
+#visualBox > .inner > .rank_box > ol > li > a .up { color: red; }
+#visualBox > .inner > .rank_box > ol > li > a .up::before{ content: "▲"; }
+#visualBox > .inner > .rank_box > ol > li > a .down { color: blue; }
+#visualBox > .inner > .rank_box > ol > li > a .down::before{ content: "▼";}
+#visualBox > .inner > .rank_box > ol > li > a .new { color: red; }
+#visualBox > .inner > .rank_box > ol > li > a .nochange::before{ content: "-"; }
 
 /* #hotBox */
 
