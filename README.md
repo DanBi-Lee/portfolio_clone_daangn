@@ -1,7 +1,7 @@
 # :office: 포트폴리오 사이트 (당근마켓 클론)
 
-**기존 사이트 주소** : https://www.daangn.com/
-**사이트 주소** : -
+- **기존 사이트 주소** : https://www.daangn.com/
+- **사이트 주소** : https://danbi-lee.github.io/portfolio_clone_daangn/
 
 ## :pencil: 포트폴리오 소개
 - 당근마켓 사이트 참고
